@@ -5,6 +5,7 @@ phases:
       - echo Restore started on `date`
       - pip install --upgrade awscli
       - dotnet restore AspNetCoreWebApplication/AspNetCoreWebApplication.csproj
+      - dotnet xunit
   build:
     commands:
       - echo Build started on `date`
